@@ -1,0 +1,30 @@
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\bin\Debug\kotches.mdf
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\bin\Debug\Kotches.exe.config
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\bin\Debug\Kotches.exe
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\bin\Debug\Kotches.pdb
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.csprojAssemblyReference.cache
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.View.frm_AddProduct.resources
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.View.frm_BuyProduct.resources
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.View.frm_Products.resources
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.Home.resources
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.Properties.Resources.resources
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.csproj.GenerateResource.cache
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.exe
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.pdb
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\bin\Debug\kotches_log.ldf
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\bin\Debug\Kotches.exe.manifest
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\bin\Debug\Kotches.application
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.TrustInfo.xml
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.exe.manifest
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.application
+E:\Work\Kotchies\Kotches\Kotches\bin\Debug\Kotches.exe.config
+E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.exe
+E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.pdb
+E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.csprojResolveAssemblyReference.cache
+E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.View.Form2.resources
+E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.View.frm_AddProduct.resources
+E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.View.frm_BuyProduct.resources
+E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.View.frm_Products.resources
+E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.Home.resources
+E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.Properties.Resources.resources
+E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.csproj.GenerateResource.Cache
