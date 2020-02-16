@@ -13,6 +13,7 @@ namespace Kotches
     public partial class Home : Form
     {
         BusinessImp.ProductBaoImp Bao = new BusinessImp.ProductBaoImp();
+        BusinessImp.EmployeeBaoImp BaoEmp = new BusinessImp.EmployeeBaoImp();
         public Home()
         {
             InitializeComponent();
@@ -20,16 +21,12 @@ namespace Kotches
 
         private void btn_Sells_Click(object sender, EventArgs e)
         {
-            frm_Sells _sells = new frm_Sells();
-            _sells.ShowDialog();
-        }
 
+        }
 
         private void btn_SellingBill_Click(object sender, EventArgs e)
         {
-            frm_SellingBill _Selling = new frm_SellingBill();
-            _Selling.txt_currentUser.Text = Program.user_name;
-            _Selling.ShowDialog();
+
         }
 
         private void btn_Products_Click(object sender, EventArgs e)
@@ -70,6 +67,30 @@ namespace Kotches
             frm_Login _Login = new frm_Login();
             _Login.ShowDialog();
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            
+            frm_Login frm  = new frm_Login();
+
+            this.Hide();
+
+            frm.ShowDialog();
+            this.Close();
+
+        }
+
+        private void btn_Users_Click(object sender, EventArgs e)
+        {
+            frm_Users frm = new frm_Users();
+            frm.data_Users.DataSource = BaoEmp.getEmployee();
+            frm.Show();
         }
     }
 }

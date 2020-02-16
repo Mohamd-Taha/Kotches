@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kotches.exe" size="174592">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kotches.exe" size="181248">
       <assemblyIdentity name="Kotches" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ahKNr3KABinPMNZ1bURHnPIk/90=</dsig:DigestValue>
+        <dsig:DigestValue>BvpnFL0E4JcLCaLP39NVak+xX6o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -68,7 +68,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>IGOFLYZor85t8Sb7nVd2kIKf2RU=</dsig:DigestValue>
+      <dsig:DigestValue>i9Y7J2CuRhV1PRWXS7UHMKfRESU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="kotches_log.ldf" size="786432" writeableType="applicationData">
@@ -77,7 +77,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>VVINy/v4xJ4xKJUPwrHbm7tTduk=</dsig:DigestValue>
+      <dsig:DigestValue>B95yglGXrMZLBoTDWb/kJXniZpA=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

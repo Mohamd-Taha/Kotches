@@ -40,8 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btn_exit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.combo_productNumber = new System.Windows.Forms.ComboBox();
             this.txt_productPrice = new System.Windows.Forms.TextBox();
@@ -50,6 +48,8 @@
             this.txt_product_price = new System.Windows.Forms.TextBox();
             this.txt_productCost = new System.Windows.Forms.TextBox();
             this.txt_productCode = new System.Windows.Forms.TextBox();
+            this.btn_exit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -178,40 +178,6 @@
             this.groupBox4.TabIndex = 65;
             this.groupBox4.TabStop = false;
             // 
-            // btn_exit
-            // 
-            this.btn_exit.FlatAppearance.BorderSize = 0;
-            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_exit.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
-            this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_exit.Location = new System.Drawing.Point(39, 18);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(159, 52);
-            this.btn_exit.TabIndex = 8;
-            this.btn_exit.Text = "خروج";
-            this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_exit.UseVisualStyleBackColor = true;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(281, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 51);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "حفظ";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.combo_productNumber);
@@ -257,6 +223,7 @@
             this.txt_productPrice.Name = "txt_productPrice";
             this.txt_productPrice.Size = new System.Drawing.Size(188, 20);
             this.txt_productPrice.TabIndex = 63;
+            this.txt_productPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.combo_productColor_KeyPress);
             // 
             // combo_productColor
             // 
@@ -276,11 +243,14 @@
             "رمادي",
             "أزرق",
             "ارجواني",
-            "ليموني"});
+            "ليموني",
+            "لبني",
+            "سماوي"});
             this.combo_productColor.Location = new System.Drawing.Point(29, 151);
             this.combo_productColor.Name = "combo_productColor";
             this.combo_productColor.Size = new System.Drawing.Size(188, 21);
             this.combo_productColor.TabIndex = 62;
+            this.combo_productColor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.combo_productColor_KeyPress);
             // 
             // combo_productName
             // 
@@ -305,6 +275,7 @@
             this.txt_productCost.Name = "txt_productCost";
             this.txt_productCost.Size = new System.Drawing.Size(188, 20);
             this.txt_productCost.TabIndex = 59;
+            this.txt_productCost.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.combo_productColor_KeyPress);
             // 
             // txt_productCode
             // 
@@ -313,6 +284,40 @@
             this.txt_productCode.Name = "txt_productCode";
             this.txt_productCode.Size = new System.Drawing.Size(188, 20);
             this.txt_productCode.TabIndex = 53;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.FlatAppearance.BorderSize = 0;
+            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_exit.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_exit.ForeColor = System.Drawing.Color.White;
+            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
+            this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_exit.Location = new System.Drawing.Point(39, 18);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(159, 52);
+            this.btn_exit.TabIndex = 8;
+            this.btn_exit.Text = "خروج";
+            this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(281, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(183, 51);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "حفظ";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frm_BuyProduct
             // 
@@ -327,7 +332,7 @@
             this.MaximizeBox = false;
             this.Name = "frm_BuyProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_BuyProduct";
+            this.Text = "تزويد منتج";
             this.Load += new System.EventHandler(this.frm_BuyProduct_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

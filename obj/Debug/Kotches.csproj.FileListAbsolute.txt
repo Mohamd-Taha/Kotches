@@ -19,26 +19,5 @@ C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.exe.manifest
 C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.application
 C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.View.frm_Config.resources
 C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.View.frm_Login.resources
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.csprojAssemblyReference.cache
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_AddProduct.resources
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_BuyProduct.resources
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_Config.resources
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_Login.resources
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_Products.resources
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.Home.resources
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.Properties.Resources.resources
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.csproj.GenerateResource.cache
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.exe
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.pdb
-D:\New folder (2)\Kotches\Kotches\bin\Debug\kotches.mdf
-D:\New folder (2)\Kotches\Kotches\bin\Debug\kotches_log.ldf
-D:\New folder (2)\Kotches\Kotches\bin\Debug\Kotches.exe.config
-D:\New folder (2)\Kotches\Kotches\bin\Debug\Kotches.exe.manifest
-D:\New folder (2)\Kotches\Kotches\bin\Debug\Kotches.application
-D:\New folder (2)\Kotches\Kotches\bin\Debug\Kotches.exe
-D:\New folder (2)\Kotches\Kotches\bin\Debug\Kotches.pdb
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.TrustInfo.xml
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.exe.manifest
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.application
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_Sells.resources
-D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_SellingBill.resources
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.View.frm_AddUser.resources
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.View.frm_Users.resources

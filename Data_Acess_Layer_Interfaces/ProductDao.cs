@@ -30,7 +30,7 @@ namespace Kotches.Data_Acess_Layer_Interfaces
 
         bool updateProductDiscription(string product_code, string product_color, int product_number, int product_size, int Id);
 
-
+        
         void updateProductNumber( int product_number, string product_code);
 
 

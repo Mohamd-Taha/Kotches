@@ -48,10 +48,10 @@
             this.combo_productColor = new System.Windows.Forms.ComboBox();
             this.combo_productSize = new System.Windows.Forms.ComboBox();
             this.combo_productNumber = new System.Windows.Forms.ComboBox();
-            this.btn_exit = new System.Windows.Forms.Button();
-            this.btn_save = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.btn_exit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -213,6 +213,7 @@
             this.txt_productPrice.Name = "txt_productPrice";
             this.txt_productPrice.Size = new System.Drawing.Size(159, 20);
             this.txt_productPrice.TabIndex = 5;
+            this.txt_productPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_productPrice_KeyPress);
             // 
             // txt_productCost
             // 
@@ -220,6 +221,7 @@
             this.txt_productCost.Name = "txt_productCost";
             this.txt_productCost.Size = new System.Drawing.Size(159, 20);
             this.txt_productCost.TabIndex = 4;
+            this.txt_productCost.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_productPrice_KeyPress);
             // 
             // txt_productName
             // 
@@ -254,7 +256,9 @@
             "رمادي",
             "أزرق",
             "ارجواني",
-            "ليموني"});
+            "ليموني",
+            "لبني",
+            "سماوي"});
             this.combo_productColor.Location = new System.Drawing.Point(39, 301);
             this.combo_productColor.Name = "combo_productColor";
             this.combo_productColor.Size = new System.Drawing.Size(159, 21);
@@ -325,40 +329,6 @@
             this.combo_productNumber.Size = new System.Drawing.Size(159, 21);
             this.combo_productNumber.TabIndex = 8;
             // 
-            // btn_exit
-            // 
-            this.btn_exit.FlatAppearance.BorderSize = 0;
-            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_exit.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
-            this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_exit.Location = new System.Drawing.Point(39, 18);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(159, 52);
-            this.btn_exit.TabIndex = 10;
-            this.btn_exit.Text = "خروج";
-            this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_exit.UseVisualStyleBackColor = true;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            // 
-            // btn_save
-            // 
-            this.btn_save.FlatAppearance.BorderSize = 0;
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_save.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
-            this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_save.Location = new System.Drawing.Point(203, 19);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(183, 51);
-            this.btn_save.TabIndex = 9;
-            this.btn_save.Text = "حفظ";
-            this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_save.UseVisualStyleBackColor = true;
-            this.btn_save.Click += new System.EventHandler(this.button1_Click);
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btn_exit);
@@ -378,6 +348,40 @@
             this.dataGridView1.TabIndex = 63;
             this.dataGridView1.Visible = false;
             // 
+            // btn_save
+            // 
+            this.btn_save.FlatAppearance.BorderSize = 0;
+            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_save.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
+            this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_save.Location = new System.Drawing.Point(203, 19);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(183, 51);
+            this.btn_save.TabIndex = 9;
+            this.btn_save.Text = "حفظ";
+            this.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.FlatAppearance.BorderSize = 0;
+            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_exit.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btn_exit.ForeColor = System.Drawing.Color.White;
+            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
+            this.btn_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_exit.Location = new System.Drawing.Point(39, 18);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(159, 52);
+            this.btn_exit.TabIndex = 10;
+            this.btn_exit.Text = "خروج";
+            this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // frm_AddProduct
             // 
             this.AcceptButton = this.btn_save;
@@ -394,7 +398,7 @@
             this.MinimizeBox = false;
             this.Name = "frm_AddProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_AddProduct";
+            this.Text = "اضافة منتج";
             this.Load += new System.EventHandler(this.frm_AddProduct_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

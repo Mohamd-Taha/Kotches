@@ -24,17 +24,26 @@ namespace Kotches.View
                 _Config.ShowDialog();
 
             }
-            else {
-                
-                Home _home = new Home();
+            else if (txt_user_name.Text == "1" && txt_password.Text == "1")
+            {
                 Program.user_name = txt_user_name.Text;
+                Program.user_password = txt_password.Text;
+                Home _home = new Home();
+                _home.Lbl_signinDate.Text = dateTimePicker1.Value.ToString();
+                _home.lbl_currentUser.Text = Program.user_name;
                 this.Hide();
+                
                 _home.ShowDialog();
                 this.Close();
 
 
             }
 
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

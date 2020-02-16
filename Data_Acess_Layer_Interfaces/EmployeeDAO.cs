@@ -1,17 +1,19 @@
 ﻿using Kotches.Data_Transfare_Objects;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
 namespace Kotches.Data_Acess_Layer_Interfaces
 {
-    interface EmployeeDAO
+    interface EmployeeDao
     {
-         Boolean addEmployee(int empId, String empName, String empUserName, String empPassword, Boolean empAccessibility);
-        Boolean logIn(String empUserName, String empPassword);
-        Boolean editEmployee(int empId, String empName, String empUserName, String empPassword, Boolean empAccessibility);
-        Boolean deleteEmployee(int empId);
+        bool addEmployee( string empName, string empUserName, string empPassword, string empAcessibility);
+        bool logIn(string empUserName, string empPassword);
+        bool updateEmployee( string empName, String empUserName, string empPassword, string empAcessibility, int empId);
+        bool deleteEmployee(int empID);
+        DataTable getEmployee();
     }
 }
 

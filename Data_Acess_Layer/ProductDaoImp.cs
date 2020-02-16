@@ -285,6 +285,5 @@ namespace Kotches.Data_Acess_Layer
             dal.ExecuteComand("updateProductNumber", param);
             dal.close();
         }
-        
     }
 }

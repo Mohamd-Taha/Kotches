@@ -35,5 +35,13 @@ namespace Kotches.View
         {
 
         }
+
+        private void combo_productColor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != Convert.ToChar(System.Globalization.CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
