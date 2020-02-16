@@ -17,14 +17,28 @@ C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\bin\Debug\Kotches.application
 C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.TrustInfo.xml
 C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.exe.manifest
 C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.application
-E:\Work\Kotchies\Kotches\Kotches\bin\Debug\Kotches.exe.config
-E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.exe
-E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.pdb
-E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.csprojResolveAssemblyReference.cache
-E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.View.Form2.resources
-E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.View.frm_AddProduct.resources
-E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.View.frm_BuyProduct.resources
-E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.View.frm_Products.resources
-E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.Home.resources
-E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.Properties.Resources.resources
-E:\Work\Kotchies\Kotches\Kotches\obj\Debug\Kotches.csproj.GenerateResource.Cache
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.View.frm_Config.resources
+C:\Users\Mohamed Osama\Desktop\Kotches\Kotches\obj\Debug\Kotches.View.frm_Login.resources
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.csprojAssemblyReference.cache
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_AddProduct.resources
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_BuyProduct.resources
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_Config.resources
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_Login.resources
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_Products.resources
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.Home.resources
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.Properties.Resources.resources
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.csproj.GenerateResource.cache
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.exe
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.pdb
+D:\New folder (2)\Kotches\Kotches\bin\Debug\kotches.mdf
+D:\New folder (2)\Kotches\Kotches\bin\Debug\kotches_log.ldf
+D:\New folder (2)\Kotches\Kotches\bin\Debug\Kotches.exe.config
+D:\New folder (2)\Kotches\Kotches\bin\Debug\Kotches.exe.manifest
+D:\New folder (2)\Kotches\Kotches\bin\Debug\Kotches.application
+D:\New folder (2)\Kotches\Kotches\bin\Debug\Kotches.exe
+D:\New folder (2)\Kotches\Kotches\bin\Debug\Kotches.pdb
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.TrustInfo.xml
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.exe.manifest
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.application
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_Sells.resources
+D:\New folder (2)\Kotches\Kotches\obj\Debug\Kotches.View.frm_SellingBill.resources

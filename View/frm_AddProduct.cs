@@ -24,136 +24,87 @@ namespace Kotches.View
 
         private void frm_AddProduct_Load(object sender, EventArgs e)
         {
+            combo_producttype.SelectedIndex    =   0;
+            combo_productSize.SelectedIndex    =   0;
+            combo_productNumber.SelectedIndex  =   0;
+            combo_productColor.SelectedIndex   =   0;
+            
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             ProductBaoImp Bao = new ProductBaoImp();
-            Bao.addProduct(txt_productCode.Text, txt_productName.Text, txt_productType.Text, Convert.ToInt32(combo_product1Size.SelectedItem), combo_product1Color.Text, Convert.ToInt32(combo_product1Number.SelectedItem), Convert.ToDouble(txt_productCost.Text), Convert.ToDouble(txt_productPrice.Text));
+           try
+            {
+                int isProductExist = 0;
+                isProductExist = Bao.getProduct(txt_productName.Text, combo_producttype.SelectedItem.ToString(), Convert.ToDouble(txt_productCost.Text), Convert.ToDouble(txt_productPrice.Text),
+                combo_productColor.SelectedItem.ToString(), Convert.ToInt32(combo_productSize.SelectedItem)).Rows.Count;
+
+            if (isProductExist == 0)
+            {
+                Bao.addProduct(txt_productCode.Text, txt_productName.Text, combo_producttype.SelectedItem.ToString(), Convert.ToDouble(txt_productCost.Text), Convert.ToDouble(txt_productPrice.Text));
+                Bao.addProductDiscription(Convert.ToInt32(combo_productSize.SelectedItem), combo_productColor.SelectedItem.ToString(), Convert.ToInt32(combo_productNumber.SelectedItem), txt_productCode.Text);
+
+
+                MessageBox.Show("تم اضافة المنتج");
+                
+            }
+            else if (isProductExist != 0 )
+            {
+
+                if (MessageBox.Show(" هل تريد تحديث بياناته", "تنبيه هذا المنتج موجود", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                {
+                    dataGridView1.DataSource = (Bao.getProductId(txt_productCode.Text, combo_productColor.SelectedItem.ToString(), Convert.ToInt32(combo_productNumber.SelectedItem), Convert.ToInt32(combo_productSize.SelectedItem)));
+                    int id = Convert.ToInt32(dataGridView1.Rows[0].Cells[0].Value);
+
+                    dataGridView1.DataSource = Bao.getProduct(txt_productName.Text, combo_producttype.SelectedItem.ToString(), Convert.ToDouble(txt_productCost.Text), Convert.ToDouble(txt_productPrice.Text),
+                    combo_productColor.SelectedItem.ToString(), Convert.ToInt32(combo_productSize.SelectedItem));
+
+                    string productCode = dataGridView1.Rows[0].Cells[0].Value.ToString();
+
+
+                    Bao.updateProduct(productCode, txt_productName.Text, combo_producttype.SelectedItem.ToString(), Convert.ToDouble(txt_productCost.Text), Convert.ToDouble(txt_productPrice.Text));
+                    Bao.updateProductDiscription(productCode, combo_productColor.SelectedItem.ToString(), Convert.ToInt32(combo_productNumber.SelectedItem), Convert.ToInt32(combo_productSize.SelectedItem), id);
+                    MessageBox.Show("تم تحديث بيانات المنتج");
+                }
+                else
+                {
+                    MessageBox.Show("تم الالغاء");
+                }
+               
+
+            }
+           
+                
+                txt_productCode.Text = Bao.getLastProductId().Rows[0][0].ToString();
+                txt_productName.Text = Bao.getLastProduct().Rows[0][1].ToString();
+                combo_producttype.SelectedItem = Bao.getLastProduct().Rows[0][2].ToString();
+                txt_productCost.Text = Bao.getLastProduct().Rows[0][3].ToString();
+                txt_productPrice.Text = Bao.getLastProduct().Rows[0][4].ToString();
+                combo_productColor.SelectedItem = Bao.getLastProduct().Rows[0][5].ToString();
+                combo_productSize.SelectedItem = Bao.getLastProduct().Rows[0][6].ToString();
+                combo_productNumber.SelectedItem = Bao.getLastProduct().Rows[0][7].ToString();
+
+                frm_Products.getFRMProducts.data_products.DataSource = Bao.getProducts();
+                frm_Products.getFRMProducts.data_products.Update(); 
+            }
+             catch
+             {
+                 MessageBox.Show("لم تتم الاضافه تأكد ان جميع المعلومات صحيحه");
+             }
+             
+         
         }
 
         private void combo_colorsNmber_SelectedValueChanged(object sender, EventArgs e)
         {
-            switch (Convert.ToInt32(combo_colorsNmber.SelectedItem))
-            {
-                case 1:
-                    combo_product1Color.Enabled = true;
-                    combo_product1Size.Enabled = true;
-                    combo_product1Number.Enabled = true;
-
-                    combo_product2Color.Enabled = false;
-                    combo_product2Size.Enabled = false;
-                    combo_product2Number.Enabled = false;
-
-                    combo_product3Color.Enabled = false;
-                    combo_product3Size.Enabled = false;
-                    combo_product3Number.Enabled = false;
-
-                    combo_product4Color.Enabled = false;
-                    combo_product4Size.Enabled = false;
-                    combo_product4Number.Enabled = false;
-
-                    combo_product5Color.Enabled = false;
-                    combo_product5Size.Enabled = false;
-                    combo_product5Number.Enabled = false;
-
-
-                    break;
-                case 2:
-
-                    combo_product1Color.Enabled = true;
-                    combo_product1Size.Enabled = true;
-                    combo_product1Number.Enabled = true;
-
-                    combo_product2Color.Enabled = true;
-                    combo_product2Size.Enabled = true;
-                    combo_product2Number.Enabled = true;
-
-                    combo_product3Color.Enabled = false;
-                    combo_product3Size.Enabled = false;
-                    combo_product3Number.Enabled = false;
-
-                    combo_product4Color.Enabled = false;
-                    combo_product4Size.Enabled = false;
-                    combo_product4Number.Enabled = false;
-
-                    combo_product5Color.Enabled = false;
-                    combo_product5Size.Enabled = false;
-                    combo_product5Number.Enabled = false;
-
-                    break;
-                case 3:
-                    combo_product1Color.Enabled = true;
-                    combo_product1Size.Enabled = true;
-                    combo_product1Number.Enabled = true;
-
-                    combo_product2Color.Enabled = true;
-                    combo_product2Size.Enabled = true;
-                    combo_product2Number.Enabled = true;
-
-                    combo_product3Color.Enabled = true;
-                    combo_product3Size.Enabled = true;
-                    combo_product3Number.Enabled = true;
-
-                    combo_product4Color.Enabled = false;
-                    combo_product4Size.Enabled = false;
-                    combo_product4Number.Enabled = false;
-
-                    combo_product5Color.Enabled = false;
-                    combo_product5Size.Enabled = false;
-                    combo_product5Number.Enabled = false;
-
-                    break;
-                case 4:
-
-                    combo_product1Color.Enabled = true;
-                    combo_product1Size.Enabled = true;
-                    combo_product1Number.Enabled = true;
-
-                    combo_product2Color.Enabled = true;
-                    combo_product2Size.Enabled = true;
-                    combo_product2Number.Enabled = true;
-
-                    combo_product3Color.Enabled = true;
-                    combo_product3Size.Enabled = true;
-                    combo_product3Number.Enabled = true;
-
-                    combo_product4Color.Enabled = true;
-                    combo_product4Size.Enabled = true;
-                    combo_product4Number.Enabled = true;
-
-                    combo_product5Color.Enabled = false;
-                    combo_product5Size.Enabled = false;
-                    combo_product5Number.Enabled = false;
-
-                    break;
-                case 5:
-
-                    combo_product1Color.Enabled = true;
-                    combo_product1Size.Enabled = true;
-                    combo_product1Number.Enabled = true;
-
-                    combo_product2Color.Enabled = true;
-                    combo_product2Size.Enabled = true;
-                    combo_product2Number.Enabled = true;
-
-                    combo_product3Color.Enabled = true;
-                    combo_product3Size.Enabled = true;
-                    combo_product3Number.Enabled = true;
-
-                    combo_product4Color.Enabled = true;
-                    combo_product4Size.Enabled = true;
-                    combo_product4Number.Enabled = true;
-
-                    combo_product5Color.Enabled = true;
-                    combo_product5Size.Enabled = true;
-                    combo_product5Number.Enabled = true;
-
-                    break;
-
-            }
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

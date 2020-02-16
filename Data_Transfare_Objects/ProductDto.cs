@@ -20,7 +20,7 @@ namespace Kotches.Model
         public string Type { get => product_type; set => product_type = value; }
         public string Color { get => product_color; set => product_color = value; }
 
-        public void addProduct(string product_code, string product_name, string product_type, int product_size, string product_color, int product_number, double product_cost, double product_price)
+        public bool addProduct(string product_code, string product_name, string product_type, int product_size, string product_color, int product_number, double product_cost, double product_price)
         {
             this.product_code = product_code;
             this.product_name = product_name;
@@ -30,10 +30,15 @@ namespace Kotches.Model
             this.product_number = product_number;
             this.product_cost = product_cost;
             this.product_price = product_price;
+            return true;
         }
 
-     
-     
+        public void deleteProduct(string product_code)
+        {
+            this.product_code = product_code;
+        }
+
+
     }
   
 

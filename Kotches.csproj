@@ -91,15 +91,25 @@
   <ItemGroup>
     <Compile Include="Business_Interfaces\ProductBao.cs" />
     <Compile Include="BusinessImp\ProductBaoImp.cs" />
+    <Compile Include="Data_Acess_Layer\BillDaoImp.cs" />
+    <Compile Include="Data_Acess_Layer_Interfaces\BillDao.cs" />
+    <Compile Include="Data_Acess_Layer_Interfaces\EmployeeDAO.cs" />
     <Compile Include="Data_Acess_Layer_Interfaces\ProductDao.cs" />
     <Compile Include="Data_Acess_Layer\DALConection.cs" />
     <Compile Include="Data_Acess_Layer\ProductDaoImp.cs" />
+    <Compile Include="Data_Transfare_Objects\EmployeeDTO.cs" />
     <Compile Include="Data_Transfare_Objects\ProductDto.cs" />
-    <Compile Include="View\Form2.cs">
+    <Compile Include="View\frm_SellingBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="View\frm_SellingBill.designer.cs">
+      <DependentUpon>frm_SellingBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_Sells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_Sells.Designer.cs">
+      <DependentUpon>frm_Sells.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frm_AddProduct.cs">
       <SubType>Form</SubType>
@@ -112,6 +122,18 @@
     </Compile>
     <Compile Include="View\frm_BuyProduct.Designer.cs">
       <DependentUpon>frm_BuyProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_Config.Designer.cs">
+      <DependentUpon>frm_Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frm_Products.cs">
       <SubType>Form</SubType>
@@ -127,14 +149,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="View\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="View\frm_SellingBill.resx">
+      <DependentUpon>frm_SellingBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_Sells.resx">
+      <DependentUpon>frm_Sells.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frm_AddProduct.resx">
       <DependentUpon>frm_AddProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frm_BuyProduct.resx">
       <DependentUpon>frm_BuyProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_Config.resx">
+      <DependentUpon>frm_Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frm_Products.resx">
       <DependentUpon>frm_Products.cs</DependentUpon>
@@ -150,6 +181,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include=".editorconfig" />
     <None Include="app.config" />
@@ -192,6 +224,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>kotches.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -30,9 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_BuyProduct));
             this.label2 = new System.Windows.Forms.Label();
-            this.combo_product_size = new System.Windows.Forms.ComboBox();
+            this.combo_productSize = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,15 +43,13 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.combo_productNumber = new System.Windows.Forms.ComboBox();
+            this.txt_productPrice = new System.Windows.Forms.TextBox();
+            this.combo_productColor = new System.Windows.Forms.ComboBox();
+            this.combo_productName = new System.Windows.Forms.ComboBox();
             this.txt_product_price = new System.Windows.Forms.TextBox();
-            this.txt_product_cost = new System.Windows.Forms.TextBox();
-            this.txt_product_number = new System.Windows.Forms.TextBox();
-            this.txt_product_code = new System.Windows.Forms.TextBox();
-            this.combo_product_name = new System.Windows.Forms.ComboBox();
-            this.combo_product_color = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_productPrce = new System.Windows.Forms.TextBox();
+            this.txt_productCost = new System.Windows.Forms.TextBox();
+            this.txt_productCode = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -66,13 +66,14 @@
             this.label2.TabIndex = 56;
             this.label2.Text = "اسم المنتج";
             // 
-            // combo_product_size
+            // combo_productSize
             // 
-            this.combo_product_size.FormattingEnabled = true;
-            this.combo_product_size.Location = new System.Drawing.Point(30, 111);
-            this.combo_product_size.Name = "combo_product_size";
-            this.combo_product_size.Size = new System.Drawing.Size(188, 21);
-            this.combo_product_size.TabIndex = 56;
+            this.combo_productSize.Enabled = false;
+            this.combo_productSize.FormattingEnabled = true;
+            this.combo_productSize.Location = new System.Drawing.Point(30, 111);
+            this.combo_productSize.Name = "combo_productSize";
+            this.combo_productSize.Size = new System.Drawing.Size(188, 21);
+            this.combo_productSize.TabIndex = 56;
             // 
             // groupBox1
             // 
@@ -90,6 +91,17 @@
             this.groupBox1.TabIndex = 63;
             this.groupBox1.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(147, 292);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 29);
+            this.label3.TabIndex = 66;
+            this.label3.Text = "سعر البيع";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -100,6 +112,17 @@
             this.label9.Size = new System.Drawing.Size(84, 29);
             this.label9.TabIndex = 62;
             this.label9.Text = "سعر البيع";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(118, 242);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 29);
+            this.label4.TabIndex = 65;
+            this.label4.Text = "تكلفة المنتج";
             // 
             // label7
             // 
@@ -187,22 +210,86 @@
             this.button1.Text = "حفظ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txt_productPrce);
-            this.groupBox2.Controls.Add(this.combo_product_color);
-            this.groupBox2.Controls.Add(this.combo_product_name);
+            this.groupBox2.Controls.Add(this.combo_productNumber);
+            this.groupBox2.Controls.Add(this.txt_productPrice);
+            this.groupBox2.Controls.Add(this.combo_productColor);
+            this.groupBox2.Controls.Add(this.combo_productName);
             this.groupBox2.Controls.Add(this.txt_product_price);
-            this.groupBox2.Controls.Add(this.txt_product_cost);
-            this.groupBox2.Controls.Add(this.txt_product_number);
-            this.groupBox2.Controls.Add(this.combo_product_size);
-            this.groupBox2.Controls.Add(this.txt_product_code);
+            this.groupBox2.Controls.Add(this.txt_productCost);
+            this.groupBox2.Controls.Add(this.combo_productSize);
+            this.groupBox2.Controls.Add(this.txt_productCode);
             this.groupBox2.Location = new System.Drawing.Point(47, 37);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(240, 350);
             this.groupBox2.TabIndex = 64;
             this.groupBox2.TabStop = false;
+            // 
+            // combo_productNumber
+            // 
+            this.combo_productNumber.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_productNumber.FormattingEnabled = true;
+            this.combo_productNumber.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"});
+            this.combo_productNumber.Location = new System.Drawing.Point(29, 200);
+            this.combo_productNumber.Name = "combo_productNumber";
+            this.combo_productNumber.Size = new System.Drawing.Size(188, 21);
+            this.combo_productNumber.TabIndex = 64;
+            // 
+            // txt_productPrice
+            // 
+            this.txt_productPrice.Enabled = false;
+            this.txt_productPrice.Location = new System.Drawing.Point(29, 301);
+            this.txt_productPrice.Name = "txt_productPrice";
+            this.txt_productPrice.Size = new System.Drawing.Size(188, 20);
+            this.txt_productPrice.TabIndex = 63;
+            // 
+            // combo_productColor
+            // 
+            this.combo_productColor.Enabled = false;
+            this.combo_productColor.FormattingEnabled = true;
+            this.combo_productColor.Items.AddRange(new object[] {
+            "أبيض",
+            "أسود",
+            "أصفر",
+            "بني",
+            "بيج",
+            "أحمر",
+            "وردي",
+            "برتقالي",
+            "أخضر",
+            "بنفسجي",
+            "رمادي",
+            "أزرق",
+            "ارجواني",
+            "ليموني"});
+            this.combo_productColor.Location = new System.Drawing.Point(29, 151);
+            this.combo_productColor.Name = "combo_productColor";
+            this.combo_productColor.Size = new System.Drawing.Size(188, 21);
+            this.combo_productColor.TabIndex = 62;
+            // 
+            // combo_productName
+            // 
+            this.combo_productName.Enabled = false;
+            this.combo_productName.FormattingEnabled = true;
+            this.combo_productName.Location = new System.Drawing.Point(30, 70);
+            this.combo_productName.Name = "combo_productName";
+            this.combo_productName.Size = new System.Drawing.Size(188, 21);
+            this.combo_productName.TabIndex = 61;
             // 
             // txt_product_price
             // 
@@ -211,78 +298,28 @@
             this.txt_product_price.Size = new System.Drawing.Size(188, 20);
             this.txt_product_price.TabIndex = 60;
             // 
-            // txt_product_cost
+            // txt_productCost
             // 
-            this.txt_product_cost.Location = new System.Drawing.Point(30, 249);
-            this.txt_product_cost.Name = "txt_product_cost";
-            this.txt_product_cost.Size = new System.Drawing.Size(188, 20);
-            this.txt_product_cost.TabIndex = 59;
+            this.txt_productCost.Enabled = false;
+            this.txt_productCost.Location = new System.Drawing.Point(30, 249);
+            this.txt_productCost.Name = "txt_productCost";
+            this.txt_productCost.Size = new System.Drawing.Size(188, 20);
+            this.txt_productCost.TabIndex = 59;
             // 
-            // txt_product_number
+            // txt_productCode
             // 
-            this.txt_product_number.Location = new System.Drawing.Point(30, 199);
-            this.txt_product_number.Name = "txt_product_number";
-            this.txt_product_number.Size = new System.Drawing.Size(188, 20);
-            this.txt_product_number.TabIndex = 58;
-            // 
-            // txt_product_code
-            // 
-            this.txt_product_code.Location = new System.Drawing.Point(30, 29);
-            this.txt_product_code.Name = "txt_product_code";
-            this.txt_product_code.Size = new System.Drawing.Size(188, 20);
-            this.txt_product_code.TabIndex = 53;
-            // 
-            // combo_product_name
-            // 
-            this.combo_product_name.FormattingEnabled = true;
-            this.combo_product_name.Location = new System.Drawing.Point(30, 70);
-            this.combo_product_name.Name = "combo_product_name";
-            this.combo_product_name.Size = new System.Drawing.Size(188, 21);
-            this.combo_product_name.TabIndex = 61;
-            // 
-            // combo_product_color
-            // 
-            this.combo_product_color.FormattingEnabled = true;
-            this.combo_product_color.Location = new System.Drawing.Point(29, 151);
-            this.combo_product_color.Name = "combo_product_color";
-            this.combo_product_color.Size = new System.Drawing.Size(188, 21);
-            this.combo_product_color.TabIndex = 62;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(147, 292);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 29);
-            this.label3.TabIndex = 66;
-            this.label3.Text = "سعر البيع";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Badiefont-Dima", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(118, 242);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 29);
-            this.label4.TabIndex = 65;
-            this.label4.Text = "تكلفة المنتج";
-            // 
-            // txt_productPrce
-            // 
-            this.txt_productPrce.Location = new System.Drawing.Point(29, 301);
-            this.txt_productPrce.Name = "txt_productPrce";
-            this.txt_productPrce.Size = new System.Drawing.Size(188, 20);
-            this.txt_productPrce.TabIndex = 63;
+            this.txt_productCode.Enabled = false;
+            this.txt_productCode.Location = new System.Drawing.Point(30, 29);
+            this.txt_productCode.Name = "txt_productCode";
+            this.txt_productCode.Size = new System.Drawing.Size(188, 20);
+            this.txt_productCode.TabIndex = 53;
             // 
             // frm_BuyProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(581, 506);
+            this.ClientSize = new System.Drawing.Size(581, 485);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
@@ -291,6 +328,7 @@
             this.Name = "frm_BuyProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_BuyProduct";
+            this.Load += new System.EventHandler(this.frm_BuyProduct_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -302,7 +340,6 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox combo_product_size;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
@@ -314,13 +351,14 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txt_product_price;
-        private System.Windows.Forms.TextBox txt_product_cost;
-        private System.Windows.Forms.TextBox txt_product_number;
-        private System.Windows.Forms.TextBox txt_product_code;
-        private System.Windows.Forms.ComboBox combo_product_color;
-        private System.Windows.Forms.ComboBox combo_product_name;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_productPrce;
+        public System.Windows.Forms.ComboBox combo_productSize;
+        public System.Windows.Forms.TextBox txt_productCost;
+        public System.Windows.Forms.TextBox txt_productCode;
+        public System.Windows.Forms.ComboBox combo_productColor;
+        public System.Windows.Forms.ComboBox combo_productName;
+        public System.Windows.Forms.TextBox txt_productPrice;
+        public System.Windows.Forms.ComboBox combo_productNumber;
     }
 }

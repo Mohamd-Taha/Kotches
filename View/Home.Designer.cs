@@ -48,16 +48,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_IncreaseCategory = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -67,9 +65,9 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -109,9 +107,9 @@
             this.btn_AddProduct.ForeColor = System.Drawing.Color.Cornsilk;
             this.btn_AddProduct.Image = ((System.Drawing.Image)(resources.GetObject("btn_AddProduct.Image")));
             this.btn_AddProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_AddProduct.Location = new System.Drawing.Point(380, 246);
+            this.btn_AddProduct.Location = new System.Drawing.Point(16, 179);
             this.btn_AddProduct.Name = "btn_AddProduct";
-            this.btn_AddProduct.Size = new System.Drawing.Size(250, 148);
+            this.btn_AddProduct.Size = new System.Drawing.Size(254, 155);
             this.btn_AddProduct.TabIndex = 27;
             this.btn_AddProduct.Text = "اضافة المنتجات";
             this.btn_AddProduct.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -131,9 +129,9 @@
             this.btn_ViewBills.ForeColor = System.Drawing.Color.Cornsilk;
             this.btn_ViewBills.Image = ((System.Drawing.Image)(resources.GetObject("btn_ViewBills.Image")));
             this.btn_ViewBills.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ViewBills.Location = new System.Drawing.Point(29, 180);
+            this.btn_ViewBills.Location = new System.Drawing.Point(716, 509);
             this.btn_ViewBills.Name = "btn_ViewBills";
-            this.btn_ViewBills.Size = new System.Drawing.Size(327, 148);
+            this.btn_ViewBills.Size = new System.Drawing.Size(323, 155);
             this.btn_ViewBills.TabIndex = 29;
             this.btn_ViewBills.Text = "عرض الفواتير";
             this.btn_ViewBills.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -173,9 +171,9 @@
             this.btn_Products.ForeColor = System.Drawing.Color.Cornsilk;
             this.btn_Products.Image = ((System.Drawing.Image)(resources.GetObject("btn_Products.Image")));
             this.btn_Products.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Products.Location = new System.Drawing.Point(380, 92);
+            this.btn_Products.Location = new System.Drawing.Point(16, 18);
             this.btn_Products.Name = "btn_Products";
-            this.btn_Products.Size = new System.Drawing.Size(250, 148);
+            this.btn_Products.Size = new System.Drawing.Size(254, 155);
             this.btn_Products.TabIndex = 26;
             this.btn_Products.Text = "المنتجات";
             this.btn_Products.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -202,6 +200,7 @@
             this.btn_Login.Text = "دخول";
             this.btn_Login.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // btn_Logout
             // 
@@ -239,9 +238,9 @@
             this.btn_Reports.ForeColor = System.Drawing.Color.White;
             this.btn_Reports.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reports.Image")));
             this.btn_Reports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Reports.Location = new System.Drawing.Point(754, 509);
+            this.btn_Reports.Location = new System.Drawing.Point(1049, 509);
             this.btn_Reports.Name = "btn_Reports";
-            this.btn_Reports.Size = new System.Drawing.Size(479, 155);
+            this.btn_Reports.Size = new System.Drawing.Size(184, 155);
             this.btn_Reports.TabIndex = 22;
             this.btn_Reports.Text = "التقارير";
             this.btn_Reports.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -262,7 +261,7 @@
             this.btn_Sells.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Sells.Location = new System.Drawing.Point(346, 509);
             this.btn_Sells.Name = "btn_Sells";
-            this.btn_Sells.Size = new System.Drawing.Size(393, 155);
+            this.btn_Sells.Size = new System.Drawing.Size(355, 155);
             this.btn_Sells.TabIndex = 28;
             this.btn_Sells.Text = "المبيعات";
             this.btn_Sells.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -304,9 +303,9 @@
             this.btn_AddUser.ForeColor = System.Drawing.Color.Cornsilk;
             this.btn_AddUser.Image = ((System.Drawing.Image)(resources.GetObject("btn_AddUser.Image")));
             this.btn_AddUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_AddUser.Location = new System.Drawing.Point(29, 334);
+            this.btn_AddUser.Location = new System.Drawing.Point(16, 337);
             this.btn_AddUser.Name = "btn_AddUser";
-            this.btn_AddUser.Size = new System.Drawing.Size(327, 111);
+            this.btn_AddUser.Size = new System.Drawing.Size(254, 118);
             this.btn_AddUser.TabIndex = 30;
             this.btn_AddUser.Text = "اضافة مستخدم جديد";
             this.btn_AddUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -419,35 +418,15 @@
             this.panel3.Size = new System.Drawing.Size(30, 155);
             this.panel3.TabIndex = 33;
             // 
-            // btn_IncreaseCategory
-            // 
-            this.btn_IncreaseCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_IncreaseCategory.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_IncreaseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_IncreaseCategory.FlatAppearance.BorderSize = 0;
-            this.btn_IncreaseCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_IncreaseCategory.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btn_IncreaseCategory.ForeColor = System.Drawing.Color.Cornsilk;
-            this.btn_IncreaseCategory.Image = ((System.Drawing.Image)(resources.GetObject("btn_IncreaseCategory.Image")));
-            this.btn_IncreaseCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_IncreaseCategory.Location = new System.Drawing.Point(29, 63);
-            this.btn_IncreaseCategory.Name = "btn_IncreaseCategory";
-            this.btn_IncreaseCategory.Size = new System.Drawing.Size(327, 111);
-            this.btn_IncreaseCategory.TabIndex = 34;
-            this.btn_IncreaseCategory.Text = "تزويد منتجات";
-            this.btn_IncreaseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_IncreaseCategory.UseVisualStyleBackColor = false;
-            this.btn_IncreaseCategory.Click += new System.EventHandler(this.btn_IncreaseCategory_Click);
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.groupBox4);
+            this.groupBox1.Controls.Add(this.panel12);
+            this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.panel7);
             this.groupBox1.Controls.Add(this.panel6);
+            this.groupBox1.Controls.Add(this.btn_ViewBills);
             this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.btn_About);
@@ -460,85 +439,75 @@
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.pictureBox1);
-            this.groupBox5.Location = new System.Drawing.Point(7, 32);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(277, 466);
-            this.groupBox5.TabIndex = 40;
-            this.groupBox5.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(33, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(208, 408);
-            this.pictureBox1.TabIndex = 37;
-            this.pictureBox1.TabStop = false;
-            // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.panel12);
-            this.groupBox4.Controls.Add(this.panel11);
             this.groupBox4.Controls.Add(this.panel10);
             this.groupBox4.Controls.Add(this.panel9);
             this.groupBox4.Controls.Add(this.panel8);
-            this.groupBox4.Controls.Add(this.btn_IncreaseCategory);
             this.groupBox4.Controls.Add(this.btn_AddProduct);
-            this.groupBox4.Controls.Add(this.btn_ViewBills);
             this.groupBox4.Controls.Add(this.btn_Products);
             this.groupBox4.Controls.Add(this.btn_AddUser);
-            this.groupBox4.Location = new System.Drawing.Point(297, 32);
+            this.groupBox4.Location = new System.Drawing.Point(651, 26);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(649, 467);
-            this.groupBox4.TabIndex = 39;
+            this.groupBox4.Size = new System.Drawing.Size(300, 473);
+            this.groupBox4.TabIndex = 41;
             this.groupBox4.TabStop = false;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Location = new System.Drawing.Point(356, 334);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(18, 111);
-            this.panel12.TabIndex = 38;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Location = new System.Drawing.Point(356, 180);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(18, 148);
-            this.panel11.TabIndex = 37;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Location = new System.Drawing.Point(356, 63);
+            this.panel10.Location = new System.Drawing.Point(267, 337);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(18, 111);
-            this.panel10.TabIndex = 37;
+            this.panel10.Size = new System.Drawing.Size(18, 118);
+            this.panel10.TabIndex = 38;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Location = new System.Drawing.Point(625, 246);
+            this.panel9.Location = new System.Drawing.Point(267, 179);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(18, 148);
+            this.panel9.Size = new System.Drawing.Size(18, 155);
             this.panel9.TabIndex = 37;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Location = new System.Drawing.Point(625, 92);
+            this.panel8.Location = new System.Drawing.Point(267, 18);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(18, 148);
+            this.panel8.Size = new System.Drawing.Size(18, 155);
             this.panel8.TabIndex = 36;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Location = new System.Drawing.Point(1036, 509);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(24, 155);
+            this.panel12.TabIndex = 36;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.pictureBox1);
+            this.groupBox5.Location = new System.Drawing.Point(7, 26);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(638, 472);
+            this.groupBox5.TabIndex = 40;
+            this.groupBox5.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(33, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(599, 424);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox3
             // 
@@ -576,7 +545,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(736, 509);
+            this.panel5.Location = new System.Drawing.Point(698, 509);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(24, 155);
             this.panel5.TabIndex = 35;
@@ -613,8 +582,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(1300, 792);
+            this.ClientSize = new System.Drawing.Size(1300, 749);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -622,12 +592,13 @@
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "الرئيسية";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -655,7 +626,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btn_IncreaseCategory;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel7;
@@ -664,14 +634,13 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 
