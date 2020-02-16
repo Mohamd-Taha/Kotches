@@ -179,6 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(319, 353);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_save);
@@ -191,7 +192,7 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.rb_sql);
             this.Name = "frm_Config";
-            this.Text = "frm_Config";
+            this.Text = "اعدادت السيرفر";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

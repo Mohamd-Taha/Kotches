@@ -147,9 +147,11 @@
             this.btn_exit.Text = "خروج";
             this.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_exit.UseVisualStyleBackColor = false;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // frm_Login
             // 
+            this.AcceptButton = this.btn_ok;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kotches.Properties.Resources._1;
@@ -164,7 +166,7 @@
             this.Controls.Add(this.btn_ok);
             this.Controls.Add(this.btn_exit);
             this.Name = "frm_Login";
-            this.Text = "frm_Login";
+            this.Text = "نافذة تسجيل الدخول";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

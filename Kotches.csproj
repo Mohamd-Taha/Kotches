@@ -89,33 +89,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessImp\EmployeeBaoImp.cs" />
+    <Compile Include="Business_Interfaces\EmployeeBao.cs" />
     <Compile Include="Business_Interfaces\ProductBao.cs" />
     <Compile Include="BusinessImp\ProductBaoImp.cs" />
-    <Compile Include="Data_Acess_Layer\BillDaoImp.cs" />
-    <Compile Include="Data_Acess_Layer_Interfaces\BillDao.cs" />
-    <Compile Include="Data_Acess_Layer_Interfaces\EmployeeDAO.cs" />
+    <Compile Include="Data_Acess_Layer\EmployeeDaoImp.cs" />
+    <Compile Include="Data_Acess_Layer_Interfaces\EmployeeDao.cs" />
     <Compile Include="Data_Acess_Layer_Interfaces\ProductDao.cs" />
     <Compile Include="Data_Acess_Layer\DALConection.cs" />
     <Compile Include="Data_Acess_Layer\ProductDaoImp.cs" />
     <Compile Include="Data_Transfare_Objects\EmployeeDTO.cs" />
     <Compile Include="Data_Transfare_Objects\ProductDto.cs" />
-    <Compile Include="View\frm_SellingBill.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frm_SellingBill.designer.cs">
-      <DependentUpon>frm_SellingBill.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\frm_Sells.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frm_Sells.Designer.cs">
-      <DependentUpon>frm_Sells.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\frm_AddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\frm_AddProduct.Designer.cs">
       <DependentUpon>frm_AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_AddUser.Designer.cs">
+      <DependentUpon>frm_AddUser.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frm_BuyProduct.cs">
       <SubType>Form</SubType>
@@ -141,6 +136,12 @@
     <Compile Include="View\frm_Products.Designer.cs">
       <DependentUpon>frm_Products.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frm_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_Users.Designer.cs">
+      <DependentUpon>frm_Users.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,14 +150,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="View\frm_SellingBill.resx">
-      <DependentUpon>frm_SellingBill.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frm_Sells.resx">
-      <DependentUpon>frm_Sells.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\frm_AddProduct.resx">
       <DependentUpon>frm_AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_AddUser.resx">
+      <DependentUpon>frm_AddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frm_BuyProduct.resx">
       <DependentUpon>frm_BuyProduct.cs</DependentUpon>
@@ -169,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frm_Products.resx">
       <DependentUpon>frm_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_Users.resx">
+      <DependentUpon>frm_Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
