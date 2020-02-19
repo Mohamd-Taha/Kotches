@@ -93,8 +93,10 @@
     <Compile Include="Business_Interfaces\EmployeeBao.cs" />
     <Compile Include="Business_Interfaces\ProductBao.cs" />
     <Compile Include="BusinessImp\ProductBaoImp.cs" />
+    <Compile Include="Data_Acess_Layer\BillDaoImp.cs" />
     <Compile Include="Data_Acess_Layer\EmployeeDaoImp.cs" />
     <Compile Include="Data_Acess_Layer_Interfaces\EmployeeDao.cs" />
+    <Compile Include="Data_Acess_Layer_Interfaces\BillDao.cs" />
     <Compile Include="Data_Acess_Layer_Interfaces\ProductDao.cs" />
     <Compile Include="Data_Acess_Layer\DALConection.cs" />
     <Compile Include="Data_Acess_Layer\ProductDaoImp.cs" />
@@ -136,6 +138,12 @@
     <Compile Include="View\frm_Products.Designer.cs">
       <DependentUpon>frm_Products.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frm_SellingBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_SellingBill.designer.cs">
+      <DependentUpon>frm_SellingBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frm_Users.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frm_Products.resx">
       <DependentUpon>frm_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_SellingBill.resx">
+      <DependentUpon>frm_SellingBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frm_Users.resx">
       <DependentUpon>frm_Users.cs</DependentUpon>
